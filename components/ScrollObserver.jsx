@@ -24,7 +24,7 @@ export default function ScrollObserver() {
     );
 
     const observeAll = () => {
-      const selector = '.card, .art, .dart2, .form, .fr-wrap, .cta, .dstat, .dperk, .faq-item, .dtool';
+      const selector = '.card, .art, .dart2, .form, .fr-wrap, .cta, .dstat, .dperk, .faq-item, .dtool, .ci';
       const elements = document.querySelectorAll(selector);
       elements.forEach((el) => {
         const rect = el.getBoundingClientRect();
@@ -42,7 +42,7 @@ export default function ScrollObserver() {
 
     // Guaranteed fallback: ensures all elements become visible even if scrolling fast or observer delays
     const fallbackTimer = setTimeout(() => {
-      document.querySelectorAll('.card, .art, .dart2, .form, .fr-wrap, .cta, .dstat, .dperk, .faq-item, .dtool')
+      document.querySelectorAll('.card, .art, .dart2, .form, .fr-wrap, .cta, .dstat, .dperk, .faq-item, .dtool, .ci')
         .forEach((el) => el.classList.add('in-view'));
     }, 1200);
 
