@@ -7,7 +7,7 @@ export default function Home(){return (<>
 <h1 className="a home-c" style={{'--x':0,'--t':166,left:'0',width:'100%',textAlign:'center'}}>Navigate Your Business<br/>Towards <em>Digital Growth.</em></h1>
 <p className="lead a home-c" style={{'--x':0,'--t':300,left:'0',width:'100%',textAlign:'center'}}>Strategic marketing. Creative thinking. Smarter digital experiences.<br/>We help businesses attract the right audience and grow with confidence.</p>
 <div className="a ctas home-c" style={{'--x':660,'--t':382}}><Link className="btn f" href="/#contact" style={{padding:'0 4.2rem'}}>Get a Quote <svg className="i" style={{width:'1.9rem',height:'1.9rem'}}><use href="/#arrow"/></svg></Link><Link className="btn" href="/#services">Our Services</Link></div>
-<div className="a fr-wrap" style={{'--x':435,'--t':461}}>
+<div className="a fr-wrap" style={{'--x':0,'--t':461,left:0,width:'100%',justifyContent:'center'}}>
 <div className="feat"><svg className="i"><use href="/#target"/></svg>Strategy</div><i className="vd"></i>
 <div className="feat"><svg className="i"><use href="/#layers"/></svg>Creativity</div><i className="vd"></i>
 <div className="feat"><svg className="i"><use href="/#code"/></svg>Technology</div><i className="vd"></i>
@@ -21,7 +21,7 @@ export default function Home(){return (<>
 <p className="lead a" style={{'--x':160,'--t':310,'--ww':'66rem'}}>MS Digital Media helps businesses build a strong digital presence through strategic marketing, creative branding, and performance-driven solutions.</p>
 <div className="a ctas" style={{'--x':158,'--t':424}}><Link className="btn f" href="/#contact" style={{padding:'0 4rem'}}>Get a Quote <svg className="i" style={{width:'1.9rem',height:'1.9rem'}}><use href="/#arrow"/></svg></Link><Link className="btn" href="/#services" style={{padding:'0 4.4rem',marginLeft:'-.3rem'}}>Our Services</Link></div>
 <img className="a art" style={{'--x':838,'--t':112,width:'78.4rem'}} src="/images/office.webp" alt="MS Digital Media office reception"/>
-<div className="a fr-wrap ab-feats" style={{'--x':272,'--t':539}}>
+<div className="a fr-wrap ab-feats" style={{'--x':0,'--t':545,left:0,width:'100%',justifyContent:'center'}}>
 <div className="feat"><svg className="i"><use href="/#target"/></svg>Strategy First</div><i className="vd"></i>
 <div className="feat"><svg className="i"><use href="/#layers"/></svg>Execution Focused</div><i className="vd"></i>
 <div className="feat"><svg className="i"><use href="/#chart"/></svg>Results Driven</div>

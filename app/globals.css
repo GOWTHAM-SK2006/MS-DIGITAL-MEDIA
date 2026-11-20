@@ -38,12 +38,12 @@ a{text-decoration:none;color:inherit}svg.i{width:1em;height:1em;fill:none;stroke
 h1{font-size:5.6rem;line-height:5.5rem;font-weight:800;letter-spacing:-.025em}h1 em{font-style:normal;color:var(--red)}
 .lead{font-size:2.1rem;line-height:3rem;color:var(--gray);font-weight:500}
 .ctas{display:flex;gap:2.8rem}
-.feat{display:flex;align-items:center;gap:2.2rem;font-size:2.1rem;font-weight:700;white-space:nowrap;height:4.6rem;transition:transform .25s ease,color .25s ease;cursor:default}
-.feat:hover{transform:translateY(-.2rem);color:var(--red)}
-.feat svg{font-size:4rem;color:var(--red);transition:transform .3s cubic-bezier(.34,1.56,.64,1)}
+.feat{display:inline-flex;align-items:center;gap:1.6rem;font-size:2.1rem;font-weight:700;white-space:nowrap;height:4.8rem;transition:transform .25s ease,color .25s ease;cursor:default}
+.feat:hover{transform:translateY(-.25rem);color:var(--red)}
+.feat svg{width:3.4rem;height:3.4rem;font-size:3.4rem;color:var(--red);flex-shrink:0;transition:transform .3s cubic-bezier(.34,1.56,.64,1)}
 .feat:hover svg{transform:scale(1.15) rotate(4deg)}
-.vd{width:.2rem;height:4.7rem;background:#d9d9de}
-.fr-wrap{display:flex;align-items:center}
+.vd{width:.15rem;height:3.4rem;background:#e5cfcf;margin:0 4.2rem;flex-shrink:0}
+.fr-wrap{display:flex;align-items:center;justify-content:center}
 .h1-serv{font-size:5.4rem;line-height:5.3rem;white-space:nowrap}
 .h1-contact{font-size:6.4rem;line-height:6.5rem}
 .m-quote{display:none!important}

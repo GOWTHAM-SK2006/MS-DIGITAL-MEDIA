@@ -438,3 +438,4 @@ export const SERVICE_DETAILS = {
     ],
   },
 };
+
