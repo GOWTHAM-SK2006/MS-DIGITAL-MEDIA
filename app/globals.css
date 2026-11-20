@@ -36,6 +36,9 @@ a{text-decoration:none;color:inherit}svg.i{width:1em;height:1em;fill:none;stroke
 @keyframes radarPulse{0%{box-shadow:0 0 0 0 rgba(211,0,0,.6)}70%{box-shadow:0 0 0 .8rem rgba(211,0,0,0)}100%{box-shadow:0 0 0 0 rgba(211,0,0,0)}}
 .badge:before{content:"";width:1.1rem;height:1.1rem;border-radius:50%;background:var(--red);animation:radarPulse 2s cubic-bezier(.25,.1,.25,1) infinite}
 h1{font-size:5.6rem;line-height:5.5rem;font-weight:800;letter-spacing:-.025em}h1 em{font-style:normal;color:var(--red)}
+.typewriter{display:inline;position:relative}
+.type-cursor{display:inline-block;width:.06em;height:.86em;background-color:var(--red);margin-left:.08em;vertical-align:-.05em;animation:typeBlink .85s infinite;border-radius:.02em}
+@keyframes typeBlink{0%,100%{opacity:1}50%{opacity:0}}
 .lead{font-size:2.1rem;line-height:3rem;color:var(--gray);font-weight:500}
 .ctas{display:flex;gap:2.8rem}
 .feat{display:inline-flex;align-items:center;gap:1.6rem;font-size:2.1rem;font-weight:700;white-space:nowrap;height:4.8rem;transition:transform .25s ease,color .25s ease;cursor:default}

@@ -1,10 +1,11 @@
 import Link from 'next/link';
 import {S,SL} from '../data/services';
 import ContactForm from '../components/ContactForm';
+import Typewriter from '../components/Typewriter';
 export default function Home(){return (<>
 <section className="page" id="home"><div className="wave"></div>
 <div className="a home-c" style={{'--x':730,'--t':117,left:'0',width:'100%',textAlign:'center'}}><span className="badge">DIGITAL MARKETING AGENCY</span></div>
-<h1 className="a home-c" style={{'--x':0,'--t':166,left:'0',width:'100%',textAlign:'center'}}>Navigate Your Business<br/>Towards <em>Digital Growth.</em></h1>
+<h1 className="a home-c" style={{'--x':0,'--t':166,left:'0',width:'100%',textAlign:'center'}}>Navigate Your Business<br/>Towards <em><Typewriter />.</em></h1>
 <p className="lead a home-c" style={{'--x':0,'--t':300,left:'0',width:'100%',textAlign:'center'}}>Strategic marketing. Creative thinking. Smarter digital experiences.<br/>We help businesses attract the right audience and grow with confidence.</p>
 <div className="a ctas home-c" style={{'--x':660,'--t':382}}><Link className="btn f" href="/#contact" style={{padding:'0 4.2rem'}}>Get a Quote <svg className="i" style={{width:'1.9rem',height:'1.9rem'}}><use href="/#arrow"/></svg></Link><Link className="btn" href="/#services">Our Services</Link></div>
 <div className="a fr-wrap" style={{'--x':0,'--t':461,left:0,width:'100%',justifyContent:'center'}}>
