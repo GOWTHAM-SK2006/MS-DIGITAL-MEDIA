@@ -38,7 +38,7 @@ h1{font-size:5.6rem;line-height:5.5rem;font-weight:800;letter-spacing:-.025em}h1
 .grid3{display:grid;grid-template-columns:repeat(3,1fr)}
 .blob{position:absolute;z-index:1}
 .ci{display:flex;gap:2.5rem;align-items:center}.ci .ib{width:7.6rem;height:7.6rem;border-radius:1.9rem}.ci b{display:block;font-size:2.3rem;font-weight:800;line-height:3rem}.ci small{font-size:1.7rem;color:var(--gray);font-weight:500}
-.soc{display:flex;gap:2rem;align-items:center;font-size:2.1rem;font-weight:800}.soc span{width:4.6rem;height:4.6rem;border-radius:50%;display:grid;place-items:center;color:#fff;font-size:2.4rem}.soc svg{width:55%;height:55%;fill:#fff;stroke:none}
+.soc{display:flex;gap:1.6rem;align-items:center;font-size:2.1rem;font-weight:800}.soc a,.soc span{width:4.6rem;height:4.6rem;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;color:#fff;text-decoration:none;transition:transform .2s ease,box-shadow .2s ease,opacity .2s ease}.soc a:hover{transform:translateY(-.25rem) scale(1.08);box-shadow:0 .6rem 1.6rem rgba(0,0,0,.15);opacity:.95}.soc svg{display:block;fill:#fff;stroke:none}
 .form{background:#fff;border-radius:3rem;box-shadow:0 2rem 6rem rgba(160,40,0,.14);padding:4.2rem 4.2rem;border:.1rem solid #fbe9e9;height:62rem}
 .fh{display:flex;gap:2.4rem;align-items:center}.fh .ib{width:8.4rem;height:8.4rem;border-radius:2rem}.fh h2{font-size:3.3rem;font-weight:800;line-height:4rem}.fh p{font-size:1.8rem;color:var(--gray);font-weight:500;margin-top:.4rem}
 .fg{display:grid;grid-template-columns:1fr 1fr;gap:2.6rem 2.6rem;margin-top:3.9rem}
