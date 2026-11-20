@@ -7,9 +7,9 @@ import ScrollObserver from '../components/ScrollObserver';
 const font = Plus_Jakarta_Sans({ subsets: ['latin'], weight: ['500', '600', '700', '800'], display: 'swap', variable: '--font' });
 
 export const metadata = {
-  title: 'MS Digital Media – Navigate Digital Sphere',
+  title: 'MS Digital Media – Design • Digital • Build',
   description: 'MS Digital Media is a results-driven digital marketing agency in Chennai: SEO, social media, personal branding, web development and conversion copywriting.',
-  icons: { icon: '/logo.png' },
+  icons: { icon: '/icon.png', apple: '/icon.png' },
 };
 export const viewport = { width: 'device-width', initialScale: 1, viewportFit: 'cover' };
 

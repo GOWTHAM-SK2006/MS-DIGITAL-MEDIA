@@ -32,7 +32,7 @@ export default function Navbar() {
   const arrow = { width: '1.9rem', height: '1.9rem' };
   return (
     <header className={'nav' + (scrolled ? ' s' : '')} id="nav">
-      <Link className="logo" href="/#home"><img src="/logo.png" alt="MS Digital Media – Navigate Digital Sphere" /></Link>
+      <Link className="logo" href="/#home"><img src="/logo.png" alt="MS Digital Media – Design • Digital • Build" /></Link>
       <nav className={'links' + (open ? ' open' : '')} onClick={() => setOpen(false)}>
         <Link href="/#home" className={on('home')}>Home</Link>
         <Link href="/#about" className={on('about')}>About</Link>
