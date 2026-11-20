@@ -20,6 +20,6 @@ export default function Sprite(){return (
 <symbol id="chat" viewBox="0 0 24 24"><path d="M4 4h16v12H10l-5 4v-4H4z"/><path d="M8 9h8M8 12h5"/></symbol>
 <symbol id="arrow" viewBox="0 0 24 24"><path d="M4 12h16M14 6l6 6-6 6" strokeWidth="2.6"/></symbol>
 <symbol id="chev" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6" strokeWidth="3.2"/></symbol>
+<symbol id="check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5" strokeWidth="3" fill="none"/></symbol>
 </defs></svg>
-
 )}

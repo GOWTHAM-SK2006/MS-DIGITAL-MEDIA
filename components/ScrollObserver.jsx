@@ -1,9 +1,12 @@
 'use client';
 import { useEffect } from 'react';
+import { usePathname } from 'next/navigation';
 
 export default function ScrollObserver() {
+  const pathname = usePathname();
+
   useEffect(() => {
-    // Add reveal-ready class so initial render without JS is never hidden
+    // Add reveal-ready class so CSS transitions only apply when JS is active
     document.documentElement.classList.add('reveal-ready');
 
     const observer = new IntersectionObserver(
@@ -15,26 +18,41 @@ export default function ScrollObserver() {
         });
       },
       {
-        threshold: 0.08,
-        rootMargin: '0px 0px -30px 0px',
+        threshold: 0.05,
+        rootMargin: '0px 0px 40px 0px',
       }
     );
 
     const observeAll = () => {
-      const elements = document.querySelectorAll(
-        '.card, .art, .dart2, .form, .fr-wrap, .dsec, .cta'
-      );
-      elements.forEach((el) => observer.observe(el));
+      const selector = '.card, .art, .dart2, .form, .fr-wrap, .cta, .dstat, .dperk, .faq-item, .dtool';
+      const elements = document.querySelectorAll(selector);
+      elements.forEach((el) => {
+        const rect = el.getBoundingClientRect();
+        // If element is already in viewport, mark in-view immediately
+        if (rect.top < window.innerHeight + 80) {
+          el.classList.add('in-view');
+        }
+        observer.observe(el);
+      });
     };
 
     observeAll();
-    const timer = setTimeout(observeAll, 600);
+    const t1 = setTimeout(observeAll, 120);
+    const t2 = setTimeout(observeAll, 500);
+
+    // Guaranteed fallback: ensures all elements become visible even if scrolling fast or observer delays
+    const fallbackTimer = setTimeout(() => {
+      document.querySelectorAll('.card, .art, .dart2, .form, .fr-wrap, .cta, .dstat, .dperk, .faq-item, .dtool')
+        .forEach((el) => el.classList.add('in-view'));
+    }, 1200);
 
     return () => {
-      clearTimeout(timer);
+      clearTimeout(t1);
+      clearTimeout(t2);
+      clearTimeout(fallbackTimer);
       observer.disconnect();
     };
-  }, []);
+  }, [pathname]);
 
   return null;
 }
