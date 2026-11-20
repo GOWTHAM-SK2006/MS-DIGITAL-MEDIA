@@ -2,7 +2,7 @@
 import {useState} from 'react';
 import {S} from '../data/services';
 export default function ContactForm(){const [sent,setSent]=useState(false);return (
-<form className="a form" id="form" onSubmit={e=>{e.preventDefault();const f=e.target;if(!f.checkValidity()){f.reportValidity();return}setSent(true);f.reset()}} style={{'--x':800,'--t':188,'--ww':'83.8rem',height:'62rem'}} noValidate>
+<form className="a form" id="form" onSubmit={e=>{e.preventDefault();const f=e.target;if(!f.checkValidity()){f.reportValidity();return}setSent(true);f.reset()}} style={{'--x':800,'--t':188,'--ww':'83.8rem'}} noValidate>
 <div className="fh"><span className="ib"><svg className="i"><use href="/#plane"/></svg></span><div><h2>Send Us a Message</h2><p>Fill in the details below and our team will reach out to you soon.</p></div></div>
 <div className="fg">
 <label className="fld"><svg className="i"><use href="/#user"/></svg><input required placeholder="Your Name *" aria-label="Your Name"/></label>

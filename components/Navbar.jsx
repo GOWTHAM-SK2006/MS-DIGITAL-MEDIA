@@ -41,9 +41,10 @@ export default function Navbar() {
           <div className="menu">{S.map((s, i) => <Link key={s[1]} href={'/services/' + SL[i]}>{s[1]}</Link>)}</div>
         </span>
         <Link href="/#contact" className={on('contact')}>Contact</Link>
+        <Link className="btn f m-quote" href="/#contact">Get a Quote <svg className="i" style={arrow}><use href="#arrow" /></svg></Link>
       </nav>
       <Link className="btn quote" href="/#contact">Get a Quote <svg className="i" style={arrow}><use href="#arrow" /></svg></Link>
-      <button className="burger" onClick={() => setOpen((o) => !o)} aria-label="Menu">☰</button>
+      <button className="burger" onClick={() => setOpen((o) => !o)} aria-label="Menu">{open ? '✕' : '☰'}</button>
     </header>
   );
 }
