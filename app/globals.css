@@ -68,10 +68,10 @@ p.home-c.lead{animation:heroFadeUp .75s cubic-bezier(.16,1,.3,1) .18s both}
 .card:hover .ib{transform:scale(1.08) rotate(-3deg);background:var(--red);color:#fff;border-color:var(--red);box-shadow:0 1rem 2.6rem rgba(211,0,0,.3)}
 .card:hover .ib svg{transform:scale(1.1)}
 .ab{padding:2.1rem 2.5rem;height:16.1rem}.ab .ib{width:8.7rem;height:8.7rem;margin-top:.3rem}.ab h3{font-size:2.7rem;font-weight:800;line-height:3.4rem}.ab p{font-size:1.95rem;line-height:2.5rem;color:var(--gray);font-weight:500;margin-top:.5rem}
-.sv{padding:2.2rem 2.6rem;height:16.8rem;gap:3rem}.sv .ib{width:8.3rem;height:8.3rem}.sv h3{font-size:2.25rem;font-weight:800;line-height:3rem;letter-spacing:-.01em}.sv p{font-size:1.7rem;line-height:2.3rem;color:var(--gray);font-weight:500;margin-top:.6rem}.sv a{display:inline-flex;gap:.8rem;align-items:center;margin-top:1.3rem;font-size:1.7rem;font-weight:700;color:var(--red);transition:gap .25s ease,color .2s ease}
-.sv a svg{transition:transform .25s cubic-bezier(.16,1,.3,1)}
-.sv a:hover{gap:1.2rem;color:#b00000}
-.sv a:hover svg{transform:translateX(.4rem)}
+.sv{padding:2.2rem 2.6rem;height:16.8rem;gap:3rem;cursor:pointer;text-decoration:none;color:inherit;user-select:none}.sv:active{transform:translateY(-.2rem) scale(.99);transition-duration:.1s}.sv .ib{width:8.3rem;height:8.3rem}.sv h3{font-size:2.25rem;font-weight:800;line-height:3rem;letter-spacing:-.01em;color:var(--ink)}.sv p{font-size:1.7rem;line-height:2.3rem;color:var(--gray);font-weight:500;margin-top:.6rem}.sv a,.sv .sv-link{display:inline-flex;gap:.8rem;align-items:center;margin-top:1.3rem;font-size:1.7rem;font-weight:700;color:var(--red);transition:gap .25s ease,color .2s ease}
+.sv a svg,.sv .sv-link svg{transition:transform .25s cubic-bezier(.16,1,.3,1)}
+.sv:hover .sv-link,.sv a:hover{gap:1.2rem;color:#b00000}
+.sv:hover .sv-link svg,.sv a:hover svg{transform:translateX(.4rem)}
 .grid3{display:grid;grid-template-columns:repeat(3,1fr)}
 @keyframes blobMorph{0%,100%{transform:scale(1) rotate(0deg);border-radius:46% 54% 40% 60%/22% 30% 70% 78%}50%{transform:scale(1.04) rotate(1.5deg) translateY(-.8rem);border-radius:54% 46% 62% 38%/30% 22% 78% 70%}}
 .blob{position:absolute;z-index:1;animation:blobMorph 10s ease-in-out infinite;will-change:transform}
@@ -269,7 +269,7 @@ h1,.h1-serv,.h1-contact{font-size:3.4rem !important;line-height:4.2rem !importan
 .card{height:auto !important;padding:2.4rem 2.2rem !important;gap:2rem !important;align-items:flex-start}
 .ib{width:6.4rem !important;height:6.4rem !important;border-radius:1.6rem !important;flex-shrink:0}
 .ab h3,.sv h3{font-size:2.1rem;line-height:2.8rem}
-.ab p,.sv p,.sv a{font-size:1.6rem;line-height:2.4rem}
+.ab p,.sv p,.sv a,.sv .sv-link{font-size:1.6rem;line-height:2.4rem}
 
 .ci{display:flex;gap:2rem;align-items:center;margin-top:1.8rem}
 .ci .ib{width:6.2rem !important;height:6.2rem !important}
