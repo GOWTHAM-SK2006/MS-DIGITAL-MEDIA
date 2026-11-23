@@ -2,7 +2,7 @@
 :root{--red:#D30000;--ink:#0B0F1A;--gray:#5B6270;--pink:#FDECEC;box-sizing:border-box}
 *{box-sizing:border-box;margin:0;padding:0}
 html{font-size:min(.5698vw,11.5px);scroll-behavior:smooth}
-body{font-family:var(--font),'Plus Jakarta Sans','Inter','Segoe UI',Arial,sans-serif;color:var(--ink);background:#fff;overflow-x:hidden;--nl:15.2rem;--nr:15.2rem}
+body{font-family:var(--font),'Outfit','Inter','Segoe UI',Arial,sans-serif;color:var(--ink);background:#fff;overflow-x:hidden;--nl:15.2rem;--nr:15.2rem}
 
 a{text-decoration:none;color:inherit}svg.i{width:1em;height:1em;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 .nav{position:fixed;top:0;transition:background .3s cubic-bezier(.16,1,.3,1),box-shadow .3s cubic-bezier(.16,1,.3,1),border-color .3s ease;left:0;right:0;height:9.2rem;display:flex;align-items:center;justify-content:space-between;padding:0 max(var(--nr),calc((100% - 175.5rem)/2 + var(--nr))) 0 max(var(--nl),calc((100% - 175.5rem)/2 + var(--nl)));z-index:20}

@@ -1,10 +1,10 @@
 import './globals.css';
-import { Plus_Jakarta_Sans } from 'next/font/google';
+import { Outfit } from 'next/font/google';
 import Sprite from '../components/Sprite';
 import Navbar from '../components/Navbar';
 import ScrollObserver from '../components/ScrollObserver';
 
-const font = Plus_Jakarta_Sans({ subsets: ['latin'], weight: ['500', '600', '700', '800'], display: 'swap', variable: '--font' });
+const font = Outfit({ subsets: ['latin'], weight: ['400', '500', '600', '700', '800', '900'], display: 'swap', variable: '--font' });
 
 export const metadata = {
   title: 'MS Digital Media – Design • Digital • Build',
